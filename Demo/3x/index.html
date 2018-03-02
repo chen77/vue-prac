@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>文档标题</title>
+	<!-- 优先使用 IE 最新版本和 Chrome -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!-- 360 使用Google Chrome Frame -->
+	<meta name="renderer" content="webkit">
+	<style>
+		.btn{
+			background: #f00;
+		}
+		.active{
+			background: blue;
+		}
+	</style>
+</head>
+<body>
+	<div id="app">
+		<a v-bind:href="url" v-bind:class='klass' v-bind:class='{active:isActive}'>点我</a>
+	</div>
+	<script src="../lib/vue.js"/></script>
+	<script src="js/main.js"/></script>
+</body>
+</html>
