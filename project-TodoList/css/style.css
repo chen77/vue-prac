@@ -1,0 +1,65 @@
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clear:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+body{
+	background: #ddd;
+}
+.p48{
+	padding: 0 1.5em;
+}
+.m48{
+	margin: 0 1.5em;
+}
+.mb10{
+	margin-bottom: 1em;
+}
+.c-lgray{
+	color: #666;
+}
+.nav{
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background: #D13F2E;
+	color: #fff;
+	margin-bottom: 1em;
+}
+.header{
+	color: #666;
+	text-align: center;
+	margin-bottom: 1em;
+}
+.task-form{
+	background: #eee;
+	padding:0.75em;
+}
+.task-form input{
+	/*background: transparent;*/
+	width: 90%;
+	height: 2em;
+	padding:0 0.75em
+}
+.task-form .btn-add{
+	display: inline-block;
+	width: 10%;
+	text-align: center;
+	background: #D13F2E;
+	color:#fff;
+	height: 2em;
+	line-height: 2em;
+}
+.task-list{
+	background: #fff;
+}
+.task-list li{
+	line-height: 2.5;
+	border-bottom: 1px solid #eee;
+}
