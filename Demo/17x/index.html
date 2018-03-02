@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>文档标题</title>
+	<!-- 优先使用 IE 最新版本和 Chrome -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!-- 360 使用Google Chrome Frame -->
+	<meta name="renderer" content="webkit">
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.panel{
+		width: 500px;
+		border: 1px solid #ccc;
+		margin: 20px;
+		margin-bottom: 10px;
+	}
+	.panel *{
+		padding: 10px;
+	}
+	.panel h4{
+		background: #ccc;
+	}
+	.panel .footer{
+		border-top: 1px solid #ccc;
+	}
+	</style>
+</head>
+<body>
+	<div class="demo">
+		<panel>
+			<div slot='title'>
+				我是第一个标题
+			</div>
+			<div slot='content'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, numquam. Mollitia quibusdam, inventore est, pariatur recusandae debitis nemo minus aliquam reprehenderit sunt sit, quod tempora deserunt accusantium expedita tenetur perspiciatis?</div>
+			<div slot='footer'>
+				我是第一个结尾
+			</div>
+		</panel>
+		<panel>
+			<div slot='title'>
+				我是第2标题
+			</div>
+			<div slot='content'>Lorem ipsum</div>
+		</panel>
+	</div>
+	<template id='panel-tpl'>
+		<div class="panel">
+			<h4>
+				<slot name='title'>title</slot>
+			</h4>
+			<div class="content">
+				<slot name='content'></slot>
+			</div>
+			<div class="footer">
+				<slot name='footer'>查看更多</slot>
+				<!-- 没有指定时默认信息 -->
+			</div>
+		</div>
+	</template>
+	<script src="../lib/vue.js"/></script>
+	<script src="js/main.js"/></script>
+</body>
+</html>

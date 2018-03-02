@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>文档标题</title>
+	<!-- 优先使用 IE 最新版本和 Chrome -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!-- 360 使用Google Chrome Frame -->
+	<meta name="renderer" content="webkit">
+	<style>
+		.card{
+			width: 500px;
+			background: #ccc;
+			padding: 10px;
+			margin-bottom: 10px;
+		}
+		.card2{
+			background: #ccc;
+		}
+	</style>
+</head>
+<body>
+	<div class="demo">
+		<div class="card card1" v-pin:true.bottom.right='card1.pinned'>
+			<button @click='card1.pinned=!card1.pinned'>钉住</button>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae repudiandae error ipsum dignissimos deserunt praesentium iusto dolorum tempora incidunt sequi ipsam odit nesciunt tenetur sunt corporis, inventore animi harum voluptatibus?</div>
+
+		<div class='card card2' v-pin:true.top.right="card2.pinned">
+			<button @click='card2.pinned=!card2.pinned'>钉住</button>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ipsam sequi, iste voluptatem maiores sint quidem eveniet placeat consequatur sed ab nisi numquam minima fugit maxime unde blanditiis quis quia!</div>
+
+		<div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ipsam sequi, iste voluptatem maiores sint quidem eveniet placeat consequatur sed ab nisi numquam minima fugit maxime unde blanditiis quis quia!</div>
+		<div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ipsam sequi, iste voluptatem maiores sint quidem eveniet placeat consequatur sed ab nisi numquam minima fugit maxime unde blanditiis quis quia!</div>
+		<div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ipsam sequi, iste voluptatem maiores sint quidem eveniet placeat consequatur sed ab nisi numquam minima fugit maxime unde blanditiis quis quia!</div>
+	</div>
+	<script src="../lib/vue.js"/></script>
+	<script src="js/main.js"/></script>
+</body>
+</html>
